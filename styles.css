@@ -1,0 +1,156 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", serif;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: min(87.5%, 22rem);
+    margin: 9.5rem auto;
+    border-radius: 15px;
+    padding: 1.5rem 1.6rem 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.image{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.mainimage{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.image:hover .overlay{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.image:hover .overlay + .view{
+    display: block;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 1.1rem 0 0.5rem;
+}
+
+h1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description{
+    font-size: 1.1rem;
+    letter-spacing: 0.015rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1.4rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.eth{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.icon{
+    margin-right: 0.4rem; 
+}
+
+.creator{
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.avatar{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.credit{
+    font-weight: 300;
+}
+
+.name{
+    color:hsl(0, 0%, 100%);
+}
+
+.name:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .detail {
+      flex-direction: column;
+    }
+}
