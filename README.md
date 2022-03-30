@@ -63,8 +63,8 @@ This has been so much easier for me than the first challenge since I'm getting t
 
 ### Useful resources
 
-- https://www.youtube.com/c/TheNetNinja - Great youtube channel with inspiring lessons
+- [The Net Ninja](https://www.youtube.com/c/TheNetNinja) - Great youtube channel with inspiring lessons
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/sillysavant)
+- Frontend Mentor - [@sillysavant](https://www.frontendmentor.io/profile/sillysavant)
